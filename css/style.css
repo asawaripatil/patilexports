@@ -31,9 +31,10 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0 0 20px 0;
   padding: 0;
+  color:cadetblue;
 }
 
 /* Back to top button */
@@ -559,6 +560,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   font-size: 20px;
   font-family: "Raleway", sans-serif;
+  line-height: 28px;
 }
 
 #about .content h3 {
@@ -566,7 +568,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 500;
   font-size: 15px;
   line-height: 26px;
-  font-style: italic;
+  font-style: normal; 
+  /* italic; */
 }
 
 #about .content p {
@@ -577,19 +580,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-#about .content i {
+#about .content i,
+#portfolio .types i,
+#services .types i{
   font-size: 20px;
   padding-right: 4px;
   color: #50d8af;
 }
 
-#about .content ul {
+#about .content ul,
+#portfolio .types h5 ul,
+#services .types ul {
   list-style: none;
   padding: 0;
 }
 
-#about .content ul li {
-  padding-bottom: 10px;
+#about .content ul li,
+#portfolio .types ul li,
+#services .types ul li {
+  padding-bottom: 5px;
 }
 
 /* Services Section
@@ -649,6 +658,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 100px;
   margin-bottom: 0;
   line-height: 24px;
+}
+
+#services .types p,
+#portfolio .types p{
+	line-height:28px;
+	font-size:16px;
 }
 
 @media (max-width: 767px) {
